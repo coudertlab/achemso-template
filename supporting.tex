@@ -1,0 +1,55 @@
+\documentclass[journal=jacsat,manuscript=article]{achemso}
+
+\usepackage{cmap}
+\pdfgentounicode=1
+\input glyphtounicode
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\SectionNumbersOn
+\setkeys{acs}{maxauthors = 10, etalmode = truncate}
+
+\usepackage[english]{babel}
+\usepackage[version=3]{mhchem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\frenchspacing
+
+\SectionNumbersOn
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\theequation}{S\arabic{equation}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\ex[1]{\ensuremath{^{\text{\scriptsize #1}}}}
+\newcommand\e[1]{\ensuremath{_{\text{\scriptsize #1}}}}
+
+\newcommand\todo[1]{\textcolor{red}{[#1]}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\affIRCP{Chimie ParisTech, PSL University, CNRS, Institut de Recherche de Chimie Paris, 75005 Paris, France}
+
+\author{Fran\c{c}ois-Xavier Coudert}
+\affiliation{\affIRCP}
+\email{fx.coudert@chimieparistech.psl.eu}
+
+\title{Supporting Information for:\\Working title}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\clearpage
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/workflow.png}
+    \caption{Schematic representation of the computational workflow (again).}
+    \label{fig:supp_workflow}
+\end{figure}
+
+\end{document}
